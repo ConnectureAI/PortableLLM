@@ -1,0 +1,178 @@
+{
+  "name": "portablellm",
+  "version": "1.0.0",
+  "description": "Professional-Grade AI for Healthcare & Small Business - Privacy-First, Local Processing, HIPAA Ready",
+  "main": "src/index.js",
+  "keywords": [
+    "ai",
+    "llm",
+    "healthcare",
+    "privacy",
+    "local",
+    "ollama",
+    "docker",
+    "portable",
+    "hipaa",
+    "medical",
+    "dental",
+    "professional"
+  ],
+  "author": {
+    "name": "PortableLLM Project",
+    "email": "contact@portablellm.com",
+    "url": "https://github.com/YourUsername/PortableLLM"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/YourUsername/PortableLLM#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YourUsername/PortableLLM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YourUsername/PortableLLM/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "npm run build:docker",
+    "build:docker": "docker build -t portablellm/app:latest .",
+    "build:installers": "npm run build:installer:windows && npm run build:installer:macos && npm run build:installer:linux",
+    "build:installer:windows": "echo 'Windows installer ready at installers/windows/install.ps1'",
+    "build:installer:macos": "echo 'macOS installer ready at installers/macos/install.sh'",
+    "build:installer:linux": "echo 'Linux installer ready at installers/linux/install.sh'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "docs": "jsdoc -c jsdoc.json",
+    "clean": "rm -rf dist/ node_modules/ coverage/",
+    "install:windows": "powershell -ExecutionPolicy Bypass -File installers/windows/install.ps1",
+    "install:macos": "bash installers/macos/install.sh",
+    "install:linux": "bash installers/linux/install.sh",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:pull": "docker-compose pull",
+    "models:download": "node scripts/download-models.js",
+    "models:list": "node scripts/list-models.js",
+    "health:check": "node scripts/health-check.js",
+    "setup:healthcare": "node scripts/download-models.js --healthcare",
+    "demo:dental": "node demos/healthcare/dental-practice-demo.js",
+    "demo:medical": "node demos/workflows/medical-documentation-demo.js",
+    "demo:privacy": "node demos/examples/privacy-demo.js",
+    "package:release": "node scripts/package-release.js",
+    "release:github": "node scripts/github-release.js",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "monitor": "node scripts/performance-monitor.js",
+    "monitor:test": "node scripts/performance-monitor.js --test",
+    "monitor:continuous": "node scripts/performance-monitor.js --monitor"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "winston": "^3.11.0",
+    "sqlite3": "^5.1.6",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "compression": "^1.7.4",
+    "rate-limiter-flexible": "^3.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.1.0",
+    "jsdoc": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/*.test.js"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:node/recommended",
+      "prettier"
+    ],
+    "env": {
+      "node": true,
+      "es2022": true,
+      "jest": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "error",
+      "node/no-unpublished-require": "off"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false
+  },
+  "portablellm": {
+    "version": "1.0.0",
+    "supportedPlatforms": [
+      "win32",
+      "darwin",
+      "linux"
+    ],
+    "requirements": {
+      "docker": ">=24.0.0",
+      "memory": "16GB",
+      "storage": "100GB",
+      "gpu": "optional (NVIDIA recommended)"
+    },
+    "models": {
+      "default": "deepseek-coder:6.7b-instruct",
+      "supported": [
+        "deepseek-coder:6.7b-instruct",
+        "llama3.1:8b-instruct",
+        "mistral:7b-instruct",
+        "codellama:7b-instruct"
+      ]
+    },
+    "healthcare": {
+      "compliance": [
+        "HIPAA",
+        "PIPEDA",
+        "GDPR"
+      ],
+      "features": [
+        "local-only-processing",
+        "encryption-at-rest",
+        "audit-logging",
+        "access-controls"
+      ]
+    }
+  }
+}
