@@ -259,27 +259,6 @@ graph TB
 
 ---
 
-## 📖 Documentation
-
-### 📚 User Documentation
-- [Installation Guide](docs/installation.md) - Step-by-step setup instructions
-- [User Manual](docs/user-manual.md) - Complete feature walkthrough  
-- [Healthcare Workflows](docs/healthcare-workflows.md) - Industry-specific use cases
-- [API Reference](docs/api-reference.md) - Complete API documentation
-
-### 🛠️ Developer Documentation  
-- [Contributing Guide](CONTRIBUTING.md) - How to contribute to the project
-- [Architecture Guide](docs/architecture.md) - Technical deep-dive
-- [Security Guide](docs/security.md) - Security best practices and compliance
-- [Deployment Guide](docs/deployment.md) - Production deployment strategies
-
-### 🏥 Compliance Documentation
-- [HIPAA Compliance](docs/compliance/hipaa.md) - Healthcare privacy requirements
-- [Privacy Policy](docs/privacy-policy.md) - Data handling and privacy practices
-- [Audit Procedures](docs/compliance/audit.md) - Compliance monitoring and reporting
-
----
-
 ## 🔧 Configuration
 
 ### Basic Configuration
@@ -494,34 +473,7 @@ PortableLLM is proudly open source because we believe:
 
 - **📋 Issues**: [GitHub Issues](https://github.com/YourUsername/PortableLLM/issues) - Bug reports and feature requests
 - **💬 Discussions**: [GitHub Discussions](https://github.com/YourUsername/PortableLLM/discussions) - Questions and community support
-- **📧 Email**: support@portablellm.com - Direct support for healthcare professionals
-
-### Professional Support
-
-- **🏥 Healthcare Implementation** - Setup and configuration assistance for medical practices
-- **📚 Training & Education** - Staff training and best practices workshops  
-- **🔧 Custom Development** - Specialized features for unique healthcare workflows
-- **🛡️ Compliance Consulting** - HIPAA, PIPEDA, and GDPR compliance guidance
-
-### Enterprise Support
-
-- **📞 24/7 Support** - Around-the-clock assistance for critical healthcare operations
-- **🏗️ Custom Deployment** - Multi-site and enterprise-scale implementations
-- **🔒 Security Audits** - Third-party security assessments and certifications
-- **📈 Performance Optimization** - Hardware and configuration optimization services
-
----
-
-## 🙏 Acknowledgments
-
-This project exists thanks to:
-
-- **🏥 Healthcare Professionals** - Who shared their challenges and requirements
-- **🤖 Ollama Team** - For providing excellent local LLM infrastructure
-- **🎨 Open WebUI Project** - For the beautiful and functional user interface
-- **🛡️ Privacy Advocates** - Who inspired our privacy-first approach
-- **🌍 Open Source Community** - For the tools and libraries that make this possible
-
+- 
 ---
 
 ## 🚀 What's Next
