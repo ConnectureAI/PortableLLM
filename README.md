@@ -62,9 +62,6 @@ PortableLLM delivers **enterprise-grade AI capabilities** that run entirely on l
 - ✅ **100% Privacy Compliance** - Zero patient data transmitted externally
 - ✅ **$3,600/year Cost Savings** - Eliminated need for cloud AI subscriptions  
 - ✅ **Improved Patient Experience** - AI-powered communication insights and documentation assistance
-- ✅ **Staff Efficiency** - Automated treatment plan explanations and insurance documentation
-
-*"PortableLLM gave us enterprise-grade AI capabilities while keeping all patient data secure and compliant."* - Practice Manager
 
 ---
 
@@ -567,13 +564,10 @@ Ready to democratize AI for healthcare professionals? Here's how you can help:
 
 **[⬆ Back to Top](#portablellm)**
 
----
-
-**Made with ❤️ for Healthcare Professionals**
 
 *Democratizing AI • Protecting Privacy • Improving Patient Care*
 
 [![GitHub stars](https://img.shields.io/github/stars/YourUsername/PortableLLM?style=social)](https://github.com/YourUsername/PortableLLM/stargazers)
-[![Twitter Follow](https://img.shields.io/twitter/follow/PortableLLM?style=social)](https://twitter.com/PortableLLM)
+
 
 </div>
